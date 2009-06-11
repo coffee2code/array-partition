@@ -1,17 +1,17 @@
 === array_partition ===
 Contributors: coffee2code
 Donate link: http://coffee2code.com
-Tags: columns, array, partitions
+Tags: columns, array, partitions, coffee2code
 Requires at least: 1.2
-Tested up to: 2.5
-Stable tag: trunk
+Tested up to: 2.8
+Stable tag: 1.0
 Version: 1.0
 
-Introduces function array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columsn).
+Introduces function array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
 
 == Description ==
 
-Introduces function array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columsn).
+Introduces function array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
 
 This plugin provides a PHP function to split an array into any number of sub-arrays, suitable for creating evenly distributed (vertically filled) "columns".  Also known as "chunking" or "partitioning".
 
@@ -99,6 +99,6 @@ It can be sent an array of any data types or objects.
 
 == Frequently Asked Questions ==
 
-= Why not use PHP's built-in <code>array_chunk()</code>? =
+= Why not use PHP's built-in `array_chunk()`? =
 
 A: `array_chunk()` allows you to specify the number of elements per partition, not how many partitions you want.

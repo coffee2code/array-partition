@@ -5,7 +5,7 @@ Version: 1.0
 Plugin URI: http://coffee2code.com/wp-plugins/array_partition
 Author: Scott Reilly
 Author URI: http://coffee2code.com
-Description: Introduces function array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columsn).
+Description: Introduces function array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
 
 This plugin provides a PHP function to split an array into any number of sub-arrays, suitable for creating evenly
 distributed (vertically filled) "columns".  Also known as "chunking" or "partitioning".
