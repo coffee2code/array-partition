@@ -1,7 +1,12 @@
 <?php
+/**
+ * @package array_partition
+ * @author Scott Reilly
+ * @version 1.0.1
+ */
 /*
 Plugin Name: array_partition
-Version: 1.0
+Version: 1.0.1
 Plugin URI: http://coffee2code.com/wp-plugins/array_partition
 Author: Scott Reilly
 Author URI: http://coffee2code.com
@@ -47,7 +52,7 @@ Array
 
 )
 
-The plugin will fill as many partitions as requested, as long as there are enough elements in the array to do so.  Any
+The function will fill as many partitions as requested, as long as there are enough elements in the array to do so.  Any
 remaining unfilled partitions will be represented as empty arrays.
 
 Why not use PHP's built-in array_chunk()?  array_chunk() allows you to specify the number of elements per partition,
@@ -63,7 +68,7 @@ Compatible with all versions of WordPress.
 Installation:
 
 1. Download the file http://coffee2code.com/wp-plugins/array_partitions.zip and unzip it into your 
-/wp-content/plugins/ directory.
+/wp-content/plugins/ directory (or install via the built-in WordPress plugin installer).
 2. Activate the plugin through the 'Plugins' admin menu in WordPress
 3. Use the array_partition() function in your template(s) or code as desired.
 
@@ -74,7 +79,7 @@ Credit:
 */
 
 /*
-Copyright (c) 2008 by Scott Reilly (aka coffee2code)
+Copyright (c) 2008-2010 by Scott Reilly (aka coffee2code)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, 
@@ -87,16 +92,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
 */
 
+/**
+ * Splits an array into N number of evenly distributed partitions (useful for
+ * splitting a list into columns).
+ *
+ * The function will fill as many partitions as requested, as long as there are
+ * enough elements in the array to do so.  Any remaining unfilled partitions
+ * will be represented as empty arrays.
+ *
+ * It can be sent an array of any data types or objects.
+ *
+ * @param array $array Array of items to be evenly distributed into columns.
+ * @param int $number_of_columns Number of columns to split the items contained in $array into.
+ * @return array An array whose elements are sub-arrays representing columns containing the distributed items from $array.
+ */
 function array_partition( $array, $number_of_columns ) {
+	$number_of_columns = (int) $number_of_columns;
     $arraylen = count( $array );
     $partlen = floor( $arraylen / $number_of_columns );
     $partrem = $arraylen % $number_of_columns;
     $partition = array();
     $mark = 0;
-    for ($px = 0; $px < $number_of_columns; $px++) {
+    for ( $px = 0; $px < $number_of_columns; $px++ ) {
         $incr = ($px < $partrem) ? $partlen + 1 : $partlen;
         $partition[$px] = array_slice( $array, $mark, $incr );
         $mark += $incr;
