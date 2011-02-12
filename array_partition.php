@@ -2,11 +2,11 @@
 /**
  * @package array_partition
  * @author Scott Reilly
- * @version 1.0.2
+ * @version 1.0.3
  */
 /*
 Plugin Name: array_partition
-Version: 1.0.2
+Version: 1.0.3
 Plugin URI: http://coffee2code.com/wp-plugins/array_partition/
 Author: Scott Reilly
 Author URI: http://coffee2code.com
@@ -24,7 +24,7 @@ Credit:
 */
 
 /*
-Copyright (c) 2008-2010 by Scott Reilly (aka coffee2code)
+Copyright (c) 2008-2011 by Scott Reilly (aka coffee2code)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy,

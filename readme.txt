@@ -3,9 +3,9 @@ Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
 Tags: columns, array, partitions, coffee2code
 Requires at least: 1.2
-Tested up to: 3.0.1
-Stable tag: 1.0.2
-Version: 1.0.2
+Tested up to: 3.1
+Stable tag: 1.0.3
+Version: 1.0.3
 
 Introduces function array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
 
@@ -56,11 +56,13 @@ The function will fill as many partitions as requested, as long as there are eno
 
 It can be sent an array of any data types or objects.
 
+
 == Installation ==
 
 1. Unzip `array_partition.zip` inside the `/wp-content/plugins/` directory (or install via the built-in WordPress plugin installer)
 1. Activate the plugin through the 'Plugins' admin menu in WordPress
 1. Use the array_partition() function in your template(s) or code as desired.
+
 
 == Examples ==
 
@@ -103,10 +105,14 @@ It can be sent an array of any data types or objects.
 
 = Why not use PHP's built-in `array_chunk()`? =
 
-A: `array_chunk()` allows you to specify the number of elements per partition, not how many partitions you want.
+`array_chunk()` allows you to specify the number of elements per partition, not how many partitions you want.
 
 
 == Changelog ==
+
+= 1.0.3 =
+* Note compatibility through WP 3.1+
+* Update copyright date (2011)
 
 = 1.0.2 =
 * Wrap function in if (function_exists()) check
@@ -125,6 +131,9 @@ A: `array_chunk()` allows you to specify the number of elements per partition, n
 
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+Trivial update: noted compatibility through WP 3.1+ and updated copyright date
 
 = 1.0.2 =
 Minor update. Highlights: added if(function_exists()) check around array_partition(); minor text reorganization; added verified WP 3.0 compatibility.
