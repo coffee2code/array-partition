@@ -2,15 +2,15 @@
 /**
  * @package array_partition
  * @author Scott Reilly
- * @version 1.0.3
+ * @version 1.1
  */
 /*
 Plugin Name: array_partition
-Version: 1.0.3
+Version: 1.1
 Plugin URI: http://coffee2code.com/wp-plugins/array_partition/
 Author: Scott Reilly
 Author URI: http://coffee2code.com
-Description: Introduces function array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
+Description: Introduces function c2c_array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
 
 Compatible with all versions of WordPress.
 
@@ -39,7 +39,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRA
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-if ( !function_exists( 'array_partition' ) ) :
+if ( !function_exists( 'c2c_array_partition' ) ) :
 /**
  * Splits an array into N number of evenly distributed partitions (useful for
  * splitting a list into columns).
@@ -50,11 +50,13 @@ if ( !function_exists( 'array_partition' ) ) :
  *
  * It can be sent an array of any data types or objects.
  *
+ * @since 1.1
+ *
  * @param array $array Array of items to be evenly distributed into columns.
  * @param int $number_of_columns Number of columns to split the items contained in $array into.
  * @return array An array whose elements are sub-arrays representing columns containing the distributed items from $array.
  */
-function array_partition( $array, $number_of_columns ) {
+function c2c_array_partition( $array, $number_of_columns ) {
 	$number_of_columns = (int) $number_of_columns;
     $arraylen = count( $array );
     $partlen = floor( $arraylen / $number_of_columns );
@@ -69,4 +71,19 @@ function array_partition( $array, $number_of_columns ) {
     return $partition;
 }
 endif;
+
+if ( !function_exists( 'array_partition' ) ) :
+/**
+ * Splits an array into N number of evenly distributed partitions (useful for
+ * splitting a list into columns).
+ *
+ * @since 1.0
+ * @deprecated 1.1 Use c2c_array_partition() instead
+ */
+function array_partition( $array, $number_of_columns ) {
+	_deprecated_function( 'array_partition', '1.1', 'c2c_array_partition' );
+	return c2c_array_partition( $array, $number_of_columns );
+}
+endif;
+
 ?>
