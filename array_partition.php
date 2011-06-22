@@ -2,11 +2,11 @@
 /**
  * @package array_partition
  * @author Scott Reilly
- * @version 1.1
+ * @version 1.1.1
  */
 /*
 Plugin Name: array_partition
-Version: 1.1
+Version: 1.1.1
 Plugin URI: http://coffee2code.com/wp-plugins/array_partition/
 Author: Scott Reilly
 Author URI: http://coffee2code.com
@@ -39,7 +39,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRA
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-if ( !function_exists( 'c2c_array_partition' ) ) :
+if ( ! function_exists( 'c2c_array_partition' ) ) :
 /**
  * Splits an array into N number of evenly distributed partitions (useful for
  * splitting a list into columns).
@@ -72,7 +72,7 @@ function c2c_array_partition( $array, $number_of_columns ) {
 }
 endif;
 
-if ( !function_exists( 'array_partition' ) ) :
+if ( ! function_exists( 'array_partition' ) ) :
 /**
  * Splits an array into N number of evenly distributed partitions (useful for
  * splitting a list into columns).

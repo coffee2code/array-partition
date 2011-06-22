@@ -3,9 +3,9 @@ Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
 Tags: columns, array, partitions, coffee2code
 Requires at least: 1.2
-Tested up to: 3.1
-Stable tag: 1.1
-Version: 1.1
+Tested up to: 3.2
+Stable tag: 1.1.1
+Version: 1.1.1
 
 Introduces function c2c_array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
 
@@ -56,7 +56,7 @@ The function will fill as many partitions as requested, as long as there are eno
 
 It can be sent an array of any data types or objects.
 
-Links: [Plugin Homepage]:(http://coffee2code.com/wp-plugins/array_partition/) | [Author Homepage]:(http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array_partition/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -112,6 +112,11 @@ Links: [Plugin Homepage]:(http://coffee2code.com/wp-plugins/array_partition/) | 
 
 == Changelog ==
 
+= 1.1.1 =
+* Note compatibility through WP 3.2+
+* Minor code formatting changes (spacing)
+* Fix plugin homepage and author links in description in readme.txt
+
 = 1.1 =
 * Rename `array_partition()` to `c2c_array_partition()` (but maintain a deprecated version for backwards compatibility)
 * Add link to plugin homepage to description in readme.txt
@@ -137,6 +142,9 @@ Links: [Plugin Homepage]:(http://coffee2code.com/wp-plugins/array_partition/) | 
 
 
 == Upgrade Notice ==
+
+= 1.1.1 =
+Trivial update: noted compatibility through WP 3.2+ and minor code formatting changes (spacing)
 
 = 1.1 =
 Minor update: deprecated 'array_partition()' in favor of 'c2c_array_partition()'; added link to plugin homepage in readme.txt
