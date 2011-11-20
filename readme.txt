@@ -1,25 +1,25 @@
 === array_partition ===
 Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
-Tags: columns, array, partitions, coffee2code
+Tags: columns, array, partitions, layout, coffee2code
 Requires at least: 1.2
-Tested up to: 3.2
-Stable tag: 1.1.1
-Version: 1.1.1
+Tested up to: 3.3
+Stable tag: 1.1.2
+Version: 1.1.2
 
-Introduces function c2c_array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
+Adds function c2c_array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
 
 
 == Description ==
 
-Introduces function `c2c_array_partition()` to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
+Adds function `c2c_array_partition()` to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
 
 This plugin provides a PHP function to split an array into any number of sub-arrays, suitable for creating evenly distributed (vertically filled) "columns".  Also known as "chunking" or "partitioning".
 
 For example:
 
-`$topics = array( "ant", "bear", "cat", "dog", "emu", "frog", "gnu", "hippo", "ibis", "jackal");`
-`print_r(c2c_array_partition($topics, 4));`
+`$topics = array( "ant", "bear", "cat", "dog", "emu", "frog", "gnu", "hippo", "ibis", "jackal" );`
+`print_r( c2c_array_partition( $topics, 4 ) );`
 
 Yields:
 
@@ -54,7 +54,37 @@ Yields:
 
 The function will fill as many partitions as requested, as long as there are enough elements in the array to do so.  Any remaining unfilled partitions will be represented as empty arrays.
 
+In contrast, using PHP's built-in `array_chunck()` as such:
+
+`print_r( array_chunk( $topics, 4 ) );`
+
+Yields:
+
+`Array
+(
+    [0] => Array
+        (
+            [0] => ant
+            [1] => bear
+            [2] => cat
+            [3] => dog
+        )
+    [1] => Array
+        (
+            [0] => emu
+            [1] => frog
+            [2] => gnu
+            [3] => hippo
+        )
+    [2] => Array
+        (
+            [0] => ibis
+            [1] => jackal
+        )
+)`
+
 It can be sent an array of any data types or objects.
+
 
 Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array_partition/) | [Author Homepage](http://coffee2code.com)
 
@@ -69,8 +99,8 @@ Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array_partition/) | [
 == Examples ==
 
 `<?php
-  $topics = array( "ant", "bear", "cat");
-  print_r(c2c_array_partition($topics, 5));
+  $topics = array( "ant", "bear", "cat" );
+  print_r( c2c_array_partition( $topics, 5 ) );
 ?>`
 
 =>
@@ -99,18 +129,25 @@ Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array_partition/) | [
     [4] => Array
         (
         )
-
 )`
+
+Also see Description section for another example.
 
 
 == Frequently Asked Questions ==
 
 = Why not use PHP's built-in `array_chunk()`? =
 
-`array_chunk()` allows you to specify the number of elements per partition, not how many partitions you want.
+`array_chunk()` allows you to specify the number of elements per partition, not how many partitions you want. (See Description.)
 
 
 == Changelog ==
+
+= 1.1.2 =
+* Note compatibility through WP 3.3+
+* Tweak to plugin description
+* Minor additional documentation
+* Minor documentation reformatting (spacing)
 
 = 1.1.1 =
 * Note compatibility through WP 3.2+
@@ -142,6 +179,9 @@ Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array_partition/) | [
 
 
 == Upgrade Notice ==
+
+= 1.1.2 =
+Trivial update: noted compatibility through WP 3.3+ and minor documentation formatting changes (spacing)
 
 = 1.1.1 =
 Trivial update: noted compatibility through WP 3.2+ and minor code formatting changes (spacing)
