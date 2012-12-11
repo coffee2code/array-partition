@@ -2,17 +2,17 @@
 /**
  * @package array_partition
  * @author Scott Reilly
- * @version 1.1.3
+ * @version 1.1.4
  */
 /*
 Plugin Name: array_partition
-Version: 1.1.3
+Version: 1.1.4
 Plugin URI: http://coffee2code.com/wp-plugins/array_partition/
 Author: Scott Reilly
 Author URI: http://coffee2code.com/
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Description: Adds function c2c_array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
+Description: Adds function c2c_array_partition() to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
 Compatible with all versions of WordPress.
 
@@ -24,7 +24,7 @@ Credit: http://us.php.net/manual/en/function.array-chunk.php#75022
 */
 
 /*
-	Copyright (c) 2008-2012 by Scott Reilly (aka coffee2code)
+	Copyright (c) 2008-2013 by Scott Reilly (aka coffee2code)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License

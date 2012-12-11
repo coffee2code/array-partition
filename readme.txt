@@ -5,18 +5,16 @@ Tags: columns, array, partitions, layout, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
-Tested up to: 3.4
-Stable tag: 1.1.3
-Version: 1.1.3
+Tested up to: 3.5
+Stable tag: 1.1.4
+Version: 1.1.4
 
-Adds function c2c_array_partition() to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
+Adds function c2c_array_partition() to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
 
 == Description ==
 
-Adds function `c2c_array_partition()` to split an array into N number of evenly distributed partitions (useful for splitting a list into columns).
-
-This plugin provides a PHP function to split an array into any number of sub-arrays, suitable for creating evenly distributed (vertically filled) "columns".  Also known as "chunking" or "partitioning".
+This plugin provides the PHP function `c2c_array_partition()` to split an array into any number of sub-arrays, suitable for creating evenly distributed (vertically filled) "columns".  Also known as "chunking" or "partitioning".
 
 For example:
 
@@ -145,6 +143,11 @@ Also see Description section for another example.
 
 == Changelog ==
 
+= 1.1.4 =
+* Shortened description and extended description
+* Note compatibility through WP 3.5+
+* Update copyright date (2013)
+
 = 1.1.3 =
 * Re-license as GPLv2 or later (from X11)
 * Add 'License' and 'License URI' header tags to readme.txt and plugin file
@@ -189,6 +192,9 @@ Also see Description section for another example.
 
 
 == Upgrade Notice ==
+
+= 1.1.4 =
+Trivial update: noted compatibility through WP 3.5+; minor documentation tweaks
 
 = 1.1.3 =
 Trivial update: noted compatibility through WP 3.4+; explicitly stated license
