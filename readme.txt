@@ -1,24 +1,23 @@
 === array_partition ===
 Contributors: coffee2code
-Donate link: http://coffee2code.com/donate
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6ARCFJ9TX3522
 Tags: columns, array, partitions, layout, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
-Tested up to: 3.5
-Stable tag: 1.1.4
-Version: 1.1.4
+Tested up to: 3.8
+Stable tag: 1.2
 
-Adds function c2c_array_partition() to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
+Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
 
 == Description ==
 
-This plugin provides the PHP function `c2c_array_partition()` to split an array into any number of sub-arrays, suitable for creating evenly distributed (vertically filled) "columns".  Also known as "chunking" or "partitioning".
+This plugin provides the PHP function `c2c_array_partition()` to split an array into any number of sub-arrays, suitable for creating evenly distributed, vertically filled "columns".  Also known as "chunking" or "partitioning".
 
 For example:
 
-`$topics = array( "ant", "bear", "cat", "dog", "emu", "frog", "gnu", "hippo", "ibis", "jackal" );`
+`$topics = array( "aardvark", "bear", "cat", "dog", "emu", "fox", "gnu", "hippo", "ibis", "jackal" );`
 `print_r( c2c_array_partition( $topics, 4 ) );`
 
 Yields:
@@ -36,7 +35,7 @@ Yields:
         (
             [0] => dog
             [1] => emu
-            [2] => frog
+            [2] => fox
         )
 
     [2] => Array
@@ -52,6 +51,8 @@ Yields:
         )
 )`
 
+Note the array elements are distributed into the requested 4 "columns" as evenly as possible.
+
 The function will fill as many partitions as requested, as long as there are enough elements in the array to do so.  Any remaining unfilled partitions will be represented as empty arrays.
 
 In contrast, using PHP's built-in `array_chunck()` as such:
@@ -64,7 +65,7 @@ Yields:
 (
     [0] => Array
         (
-            [0] => ant
+            [0] => aardvark
             [1] => bear
             [2] => cat
             [3] => dog
@@ -72,7 +73,7 @@ Yields:
     [1] => Array
         (
             [0] => emu
-            [1] => frog
+            [1] => fox
             [2] => gnu
             [3] => hippo
         )
@@ -86,7 +87,7 @@ Yields:
 It can be sent an array of any data types or objects.
 
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array_partition/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array-partition/) | [Plugin Directory Page](http://wordpress.org/plugins/array-partition/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -131,17 +132,33 @@ Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array_partition/) | [
         )
 )`
 
-Also see Description section for another example.
+Also see Description section for another example. Definitely check out the packaged unit test file as it contains various examples.
 
 
 == Frequently Asked Questions ==
 
 = Why not use PHP's built-in `array_chunk()`? =
 
-`array_chunk()` allows you to specify the number of elements per partition, not how many partitions you want. (See Description.)
+`array_chunk()` allows you to specify the number of elements per partition, not how many partitions you want. (See Description.).
+
+For an array with 12 elements, if you requested a chunk size of 2, you would get back an array of 6 sub-arrays (the original elements grouped into arrays of 2 elements). With `array_partition()`, if you requested 2 partitions, you would get back an array of 2 sub-arrays (the original elements grouped into 2 arrays).
+
+= Does this plugin include unit tests? =
+
+Yes.
 
 
 == Changelog ==
+
+= 1.2 =
+* Return an empty array if 0 columns are requested
+* Treat $number_of_columns as absint(), permitting negative and string numerical values to work
+* Add unit tests
+* Note compatibility through WP 3.8+
+* Update copyright date (2014)
+* Change description
+* Various code and documentation reformatting
+* Add banner image
 
 = 1.1.4 =
 * Shortened description and extended description
@@ -192,6 +209,9 @@ Also see Description section for another example.
 
 
 == Upgrade Notice ==
+
+= 1.2 =
+Minor update: now handle 0, negative, and string numerical values for number_of_columns argument; added unit tests; noted compatibility through WP 3.8+
 
 = 1.1.4 =
 Trivial update: noted compatibility through WP 3.5+; minor documentation tweaks
