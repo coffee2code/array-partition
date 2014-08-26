@@ -5,8 +5,8 @@ Tags: columns, array, partitions, layout, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
-Tested up to: 3.8
-Stable tag: 1.2
+Tested up to: 4.0
+Stable tag: 1.2.1
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -87,7 +87,7 @@ Yields:
 It can be sent an array of any data types or objects.
 
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array-partition/) | [Plugin Directory Page](http://wordpress.org/plugins/array-partition/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array-partition/) | [Plugin Directory Page](https://wordpress.org/plugins/array-partition/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -150,6 +150,13 @@ Yes.
 
 == Changelog ==
 
+= 1.2.1 (2014-08-25) =
+* Die early if script is directly invoked
+* Minor plugin header reformatting
+* Change documentation links to wp.org to be https
+* Note compatibility through WP 4.0+
+* Add plugin icon
+
 = 1.2 =
 * Return an empty array if 0 columns are requested
 * Treat $number_of_columns as absint(), permitting negative and string numerical values to work
@@ -209,6 +216,9 @@ Yes.
 
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+Trivial update: noted compatibility through WP 4.0+; minor documentation tweaks; added plugin icon
 
 = 1.2 =
 Minor update: now handle 0, negative, and string numerical values for number_of_columns argument; added unit tests; noted compatibility through WP 3.8+

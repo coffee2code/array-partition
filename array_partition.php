@@ -1,26 +1,25 @@
 <?php
 /**
+ * Plugin Name: array_partition
+ * Version:     1.2.1
+ * Plugin URI:  http://coffee2code.com/wp-plugins/array-partition/
+ * Author:      Scott Reilly
+ * Author URI:  http://coffee2code.com/
+ * License:     GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Description: Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
+ *
+ * Compatible with all versions of WordPress.
+ *
+ * =>> Read the accompanying readme.txt file for instructions and documentation.
+ * =>> Also, visit the plugin's homepage for additional information and updates.
+ * =>> Or visit: https://wordpress.org/plugins/array_partition/
+ *
+ * Credit: http://us.php.net/manual/en/function.array-chunk.php#75022
+ *
  * @package array_partition
  * @author Scott Reilly
- * @version 1.2
- */
-/*
-Plugin Name: array_partition
-Version: 1.2
-Plugin URI: http://coffee2code.com/wp-plugins/array-partition/
-Author: Scott Reilly
-Author URI: http://coffee2code.com/
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Description: Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
-
-Compatible with all versions of WordPress.
-
-=>> Read the accompanying readme.txt file for instructions and documentation.
-=>> Also, visit the plugin's homepage for additional information and updates.
-=>> Or visit: http://wordpress.org/plugins/array_partition/
-
-Credit: http://us.php.net/manual/en/function.array-chunk.php#75022
+ * @version 1.2.1
 */
 
 /*
@@ -40,6 +39,8 @@ Credit: http://us.php.net/manual/en/function.array-chunk.php#75022
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
+
+defined( 'ABSPATH' ) or die();
 
 if ( ! function_exists( 'c2c_array_partition' ) ) :
 	/**
