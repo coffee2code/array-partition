@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: array_partition
- * Version:     1.2.2
+ * Version:     1.2.3
  * Plugin URI:  http://coffee2code.com/wp-plugins/array-partition/
  * Author:      Scott Reilly
  * Author URI:  http://coffee2code.com/
@@ -18,12 +18,12 @@
  * Credit: http://us.php.net/manual/en/function.array-chunk.php#75022
  *
  * @package array_partition
- * @author Scott Reilly
- * @version 1.2.2
+ * @author  Scott Reilly
+ * @version 1.2.3
 */
 
 /*
-	Copyright (c) 2008-2015 by Scott Reilly (aka coffee2code)
+	Copyright (c) 2008-2016 by Scott Reilly (aka coffee2code)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License

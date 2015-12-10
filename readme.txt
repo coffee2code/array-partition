@@ -5,8 +5,8 @@ Tags: columns, array, partitions, layout, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
-Tested up to: 4.1
-Stable tag: 1.2.2
+Tested up to: 4.4
+Stable tag: 1.2.3
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -55,7 +55,7 @@ Note the array elements are distributed into the requested 4 "columns" as evenly
 
 The function will fill as many partitions as requested, as long as there are enough elements in the array to do so.  Any remaining unfilled partitions will be represented as empty arrays.
 
-In contrast, using PHP's built-in `array_chunck()` as such:
+In contrast, using PHP's built-in `array_chunk()` as such:
 
 `print_r( array_chunk( $topics, 4 ) );`
 
@@ -150,6 +150,12 @@ Yes.
 
 == Changelog ==
 
+= 1.2.3 (2015-12-09) =
+* Change: Note compatibility through WP 4.4+.
+* Change: Fix minor typo in documentation.
+* Change: Explicitly declare methods in unit tests as public or protected.
+* Change: Update copyright date (2016).
+
 = 1.2.2 (2015-02-11) =
 * Note compatibility through WP 4.1+
 * Update copyright date (2015)
@@ -220,6 +226,9 @@ Yes.
 
 
 == Upgrade Notice ==
+
+= 1.2.3 =
+Trivial update: noted compatibility through WP 4.4+ and updated copyright date
 
 = 1.2.2 =
 Trivial update: noted compatibility through WP 4.1+ and updated copyright date
