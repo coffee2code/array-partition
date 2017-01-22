@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 4.7
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -150,7 +150,7 @@ Yes.
 
 == Changelog ==
 
-= () =
+= 1.2.4 (2017-01-22) =
 * Change: Enable more error output for unit tests.
 * Change: Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable.
 * Change: Minor inline documentation reformatting.
@@ -233,6 +233,9 @@ Yes.
 
 
 == Upgrade Notice ==
+
+= 1.2.4 =
+Trivial update: updated unit test bootstrap file, noted compatibility through WP 4.7+, and updated copyright date
 
 = 1.2.3 =
 Trivial update: noted compatibility through WP 4.4+ and updated copyright date
