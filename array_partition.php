@@ -15,7 +15,7 @@
  * =>> Also, visit the plugin's homepage for additional information and updates.
  * =>> Or visit: https://wordpress.org/plugins/array_partition/
  *
- * Credit: http://us.php.net/manual/en/function.array-chunk.php#75022
+ * Credit: https://secure.php.net/manual/en/function.array-chunk.php#75022
  *
  * @package array_partition
  * @author  Scott Reilly
@@ -55,9 +55,10 @@ if ( ! function_exists( 'c2c_array_partition' ) ) :
 	 *
 	 * @since 1.1
 	 *
-	 * @param array $array Array of items to be evenly distributed into columns.
-	 * @param int $number_of_columns Number of columns to split the items contained in $array into.
-	 * @return array An array whose elements are sub-arrays representing columns containing the distributed items from $array.
+	 * @param  array $array             Array of items to be evenly distributed into columns.
+	 * @param  int   $number_of_columns Number of columns to split the items contained in $array into.
+	 * @return array                    An array whose elements are sub-arrays representing columns
+	 *                                  containing the distributed items from $array.
 	 */
 	function c2c_array_partition( $array, $number_of_columns ) {
 		$number_of_columns = absint( $number_of_columns );
