@@ -151,6 +151,7 @@ Yes.
 == Changelog ==
 
 = () =
+* Change: Enable more error output for unit tests.
 * Change: Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable.
 
 = 1.2.3 (2015-12-09) =
