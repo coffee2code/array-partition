@@ -92,7 +92,7 @@ Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array-partition/) | [
 
 == Installation ==
 
-1. Unzip `array_partition.zip` inside the `/wp-content/plugins/` directory (or install via the built-in WordPress plugin installer)
+1. Install via the built-in WordPress plugin installer. Or download and unzip `array-partition.zip` inside the plugins directory for your site (typically `wp-content/plugins/`)
 1. Activate the plugin through the 'Plugins' admin menu in WordPress
 1. Use the `c2c_array_partition()` function in your template(s) or code as desired.
 
@@ -155,6 +155,7 @@ Yes.
 * Change: Add GitHub link to readme
 * Change: Note compatibility through WP 4.9+
 * Change: Update copyright date (2018)
+* Change: Update installation instruction to prefer built-in installer over .zip file
 
 = 1.2.4 (2017-01-22) =
 * Change: Enable more error output for unit tests.
