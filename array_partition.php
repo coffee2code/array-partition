@@ -74,7 +74,7 @@ if ( ! function_exists( 'c2c_array_partition' ) ) :
 		$mark = 0;
 		for ( $px = 0; $px < $number_of_columns; $px++ ) {
 			$incr = ( $px < $partrem ) ? $partlen + 1 : $partlen;
-			$partition[$px] = array_slice( $array, $mark, $incr );
+			$partition[ $px ] = array_slice( $array, $mark, $incr );
 			$mark += $incr;
 		}
 		return $partition;
