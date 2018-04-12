@@ -5,7 +5,7 @@ Tags: columns, array, partitions, partitioning, chunk, layout, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
-Tested up to: 4.7
+Tested up to: 4.9
 Stable tag: 1.2.4
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
@@ -152,6 +152,7 @@ Yes.
 
 = () =
 * Change: Add GitHub link to readme
+* Change: Note compatibility through WP 4.9+
 * Change: Update copyright date (2018)
 
 = 1.2.4 (2017-01-22) =
