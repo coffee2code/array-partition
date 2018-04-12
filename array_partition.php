@@ -13,7 +13,7 @@
  *
  * =>> Read the accompanying readme.txt file for instructions and documentation.
  * =>> Also, visit the plugin's homepage for additional information and updates.
- * =>> Or visit: https://wordpress.org/plugins/array_partition/
+ * =>> Or visit: https://wordpress.org/plugins/array-partition/
  *
  * Credit: https://secure.php.net/manual/en/function.array-chunk.php#75022
  *
