@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 4.9
-Stable tag: 1.2.4
+Stable tag: 1.2.5
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -150,7 +150,7 @@ Yes.
 
 == Changelog ==
 
-= () =
+= 1.2.5 (2018-04-11) =
 * New: Add README.md
 * New: Add 'Text Domain' plugin header
 * Fix: Use correct Plugin Directory URL in plugin header comment
@@ -244,6 +244,9 @@ Yes.
 
 
 == Upgrade Notice ==
+
+= 1.2.5 =
+Trivial update: noted compatibility through WP 4.9+, added README.md for GitHub, and updated copyright date (2018)
 
 = 1.2.4 =
 Trivial update: updated unit test bootstrap file, noted compatibility through WP 4.7+, and updated copyright date
