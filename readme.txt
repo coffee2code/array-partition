@@ -151,6 +151,7 @@ Yes.
 == Changelog ==
 
 = () =
+* New: Add README.md
 * New: Add 'Text Domain' plugin header
 * Fix: Use correct Plugin Directory URL in plugin header comment
 * Change: Prevent direct invocation of unit test file
