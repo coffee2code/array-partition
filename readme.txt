@@ -153,6 +153,7 @@ Yes.
 = () =
 * New: Add 'Text Domain' plugin header
 * Fix: Use correct Plugin Directory URL in plugin header comment
+* Change: Minor whitespace changes to unit test bootstrap
 * Change: Add GitHub link to readme
 * Change: Note compatibility through WP 4.9+
 * Change: Update copyright date (2018)
