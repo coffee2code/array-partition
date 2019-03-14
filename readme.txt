@@ -151,6 +151,7 @@ Yes.
 == Changelog ==
 
 = () =
+* Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS
 
 = 1.2.5 (2018-04-11) =
