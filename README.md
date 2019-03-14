@@ -1,4 +1,4 @@
-# Admin Trim Interface
+# array_partition
 
 Helper function that splits an array into N number of evenly distributed partitions (i.e. split a list into N columns). Can be used generally in PHP projects or in WordPress as a plugin (for which it has the requisite layout).
 
