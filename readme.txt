@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 5.1
-Stable tag: 1.2.5
+Stable tag: 1.2.6
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -150,7 +150,7 @@ Yes.
 
 == Changelog ==
 
-= () =
+= 1.2.6 (2019-03-13) =
 * New: Add CHANGELOG.md and move all but most recent changelog entries into it
 * Change: Split paragraph in README.md's "Support" section into two
 * Change: Note compatibility through WP 5.1+
@@ -179,6 +179,9 @@ Yes.
 
 
 == Upgrade Notice ==
+
+= 1.2.6 =
+Trivial update: created CHANGELOG.md to store changelog outside of readme.txt, noted compatibility through WP 5.1+, and updated copyright date (2019)
 
 = 1.2.5 =
 Trivial update: noted compatibility through WP 4.9+, added README.md for GitHub, and updated copyright date (2018)
