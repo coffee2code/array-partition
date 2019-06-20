@@ -87,7 +87,7 @@ Yields:
 It can be sent an array of any data types or objects.
 
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array-partition/) | [Plugin Directory Page](https://wordpress.org/plugins/array-partition/) | [GitHub](https://github.com/coffe2code/array-partition/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/array-partition/) | [Plugin Directory Page](https://wordpress.org/plugins/array-partition/) | [GitHub](https://github.com/coffee2code/array-partition/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
