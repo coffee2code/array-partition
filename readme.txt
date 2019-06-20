@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 5.2
-Stable tag: 1.2.6
+Stable tag: 1.2.7
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -150,6 +150,13 @@ Yes.
 
 == Changelog ==
 
+= 1.2.7 (2019-06-19) =
+* Change: Update unit test install script and bootstrap to use latest WP unit test repo
+* Change: Note compatibility through WP 5.2+
+* Change: Add link to CHANGELOG.md in README.md
+* Fix: Correct typo in GitHub URL
+* Fix: Use full path to CHANGELOG.md in the Changelog section of readme.txt
+
 = 1.2.6 (2019-03-13) =
 * New: Add CHANGELOG.md and move all but most recent changelog entries into it
 * Change: Split paragraph in README.md's "Support" section into two
@@ -168,17 +175,13 @@ Yes.
 * Change: Update copyright date (2018)
 * Change: Update installation instruction to prefer built-in installer over .zip file
 
-= 1.2.4 (2017-01-22) =
-* Change: Enable more error output for unit tests.
-* Change: Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable.
-* Change: Minor inline documentation reformatting.
-* Change: Note compatibility through WP 4.7+.
-* Change: Update copyright date (2017).
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/array-partition/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.2.7 =
+Trivial update: modernized unit tests and noted compatibility through WP 5.2+
 
 = 1.2.6 =
 Trivial update: created CHANGELOG.md to store changelog outside of readme.txt, noted compatibility through WP 5.1+, and updated copyright date (2019)
