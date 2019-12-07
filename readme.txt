@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 5.3
-Stable tag: 1.2.7
+Stable tag: 1.2.8
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -150,6 +150,10 @@ Yes.
 
 == Changelog ==
 
+= 1.2.8 (2019-12-07) =
+* Change: Note compatibility through WP 5.3+
+* Change: Update copyright date (2020)
+
 = 1.2.7 (2019-06-19) =
 * Change: Update unit test install script and bootstrap to use latest WP unit test repo
 * Change: Note compatibility through WP 5.2+
@@ -164,21 +168,13 @@ Yes.
 * Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS
 
-= 1.2.5 (2018-04-11) =
-* New: Add README.md
-* New: Add 'Text Domain' plugin header
-* Fix: Use correct Plugin Directory URL in plugin header comment
-* Change: Prevent direct invocation of unit test file
-* Change: Minor whitespace changes to unit test bootstrap
-* Change: Add GitHub link to readme
-* Change: Note compatibility through WP 4.9+
-* Change: Update copyright date (2018)
-* Change: Update installation instruction to prefer built-in installer over .zip file
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/array-partition/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.2.8 =
+Trivial update: noted compatibility through WP 5.3+ and updated copyright date (2020)
 
 = 1.2.7 =
 Trivial update: modernized unit tests and noted compatibility through WP 5.2+
