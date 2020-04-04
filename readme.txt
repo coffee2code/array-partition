@@ -5,7 +5,7 @@ Tags: columns, array, partitions, partitioning, chunk, layout, coffee2code
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
-Tested up to: 5.3
+Tested up to: 5.4
 Stable tag: 1.2.8
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
