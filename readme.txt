@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 5.4
-Stable tag: 1.2.8
+Stable tag: 1.2.9
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -152,6 +152,12 @@ Yes.
 
 == Changelog ==
 
+= 1.2.9 (2020-05-04) =
+* Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests
+* Change: Note compatibility through WP 5.4+
+* Change: Tweak FAQ answer to better clarify difference from `array_chunk()`
+* Change: Update links to coffee2code.com to be HTTPS
+
 = 1.2.8 (2019-12-07) =
 * Change: Note compatibility through WP 5.3+
 * Change: Update copyright date (2020)
@@ -163,17 +169,13 @@ Yes.
 * Fix: Correct typo in GitHub URL
 * Fix: Use full path to CHANGELOG.md in the Changelog section of readme.txt
 
-= 1.2.6 (2019-03-13) =
-* New: Add CHANGELOG.md and move all but most recent changelog entries into it
-* Change: Split paragraph in README.md's "Support" section into two
-* Change: Note compatibility through WP 5.1+
-* Change: Update copyright date (2019)
-* Change: Update License URI to be HTTPS
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/array-partition/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.2.9 =
+Trivial update: Updated a few URLs to be HTTPS and noted compatibility through WP 5.4+.
 
 = 1.2.8 =
 Trivial update: noted compatibility through WP 5.3+ and updated copyright date (2020)
