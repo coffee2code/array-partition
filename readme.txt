@@ -143,6 +143,8 @@ Also see Description section for another example. Definitely check out the packa
 
 For an array with 12 elements, if you requested a chunk size of 2, you would get back an array of 6 sub-arrays (the original elements grouped into arrays of 2 elements). With `array_partition()`, if you requested 2 partitions, you would get back an array of 2 sub-arrays (the original elements grouped into 2 arrays).
 
+Phrased another way, with `array_chunk()` you tell it how many elements max should be in a partition and it gives you as many partitions as necessary. With `c2c_array_partition()`, you tell it how many partitions you want, and it'll evenly split the elements into those partitions as evenly as possible.
+
 = Does this plugin include unit tests? =
 
 Yes.

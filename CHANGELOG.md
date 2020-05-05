@@ -3,6 +3,7 @@
 ## _(in-progress)_
 * Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests
 * Change: Note compatibility through WP 5.4+
+* Change: Tweak FAQ answer to better clarify difference from `array_chunk()`
 * Change: Update links to coffee2code.com to be HTTPS
 
 ## 1.2.8 _(2019-12-07)_
