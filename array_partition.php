@@ -2,9 +2,9 @@
 /**
  * Plugin Name: array_partition
  * Version:     1.2.8
- * Plugin URI:  http://coffee2code.com/wp-plugins/array-partition/
+ * Plugin URI:  https://coffee2code.com/wp-plugins/array-partition/
  * Author:      Scott Reilly
- * Author URI:  http://coffee2code.com/
+ * Author URI:  https://coffee2code.com/
  * Text Domain: array-partition
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
