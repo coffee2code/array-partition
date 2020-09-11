@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 5.5
-Stable tag: 1.2.9
+Stable tag: 1.3
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -152,6 +152,17 @@ Yes.
 
 == Changelog ==
 
+= 1.3 (2020-09-10) =
+* Delete: Remove long-deprecated `array_partition()`
+* Change: Restructure unit test file structure
+    * New: Create new subdirectory `phpunit/` to house all files related to unit testing
+    * Change: Move `bin/` to `phpunit/bin/`
+    * Change: Move `tests/bootstrap.php` to `phpunit/`
+    * Change: Move `tests/` to `phpunit/tests/`
+    * Change: Rename `phpunit.xml` to `phpunit.xml.dist` per best practices
+* Change: Note compatibility through WP 5.5+
+* Change: Use backticks to denote code in old Upgrade Notice entries
+
 = 1.2.9 (2020-05-04) =
 * Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests
 * Change: Note compatibility through WP 5.4+
@@ -162,17 +173,13 @@ Yes.
 * Change: Note compatibility through WP 5.3+
 * Change: Update copyright date (2020)
 
-= 1.2.7 (2019-06-19) =
-* Change: Update unit test install script and bootstrap to use latest WP unit test repo
-* Change: Note compatibility through WP 5.2+
-* Change: Add link to CHANGELOG.md in README.md
-* Fix: Correct typo in GitHub URL
-* Fix: Use full path to CHANGELOG.md in the Changelog section of readme.txt
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/array-partition/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.3 =
+Minor update: Removed long-deprecated function `array_partition()`, restructured unit test file structure, and noted compatibility through WP 5.5+.
 
 = 1.2.9 =
 Trivial update: Updated a few URLs to be HTTPS and noted compatibility through WP 5.4+.
