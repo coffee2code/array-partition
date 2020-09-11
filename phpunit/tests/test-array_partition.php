@@ -79,11 +79,4 @@ class array_partition_Test extends WP_UnitTestCase {
 		$this->assertEquals( $this->get_test_array_partitioned_into_3(), c2c_array_partition( $this->get_test_array(), '3' ) );
 	}
 
-	/**
-	 * @expectedDeprecated array_partition
-	 */
-	public function test_deprecated_function() {
-		$this->assertEquals( $this->get_test_array_partitioned_into_3(), array_partition( $this->get_test_array(), 3 ) );
-	}
-
 }

@@ -81,17 +81,3 @@ if ( ! function_exists( 'c2c_array_partition' ) ) :
 		return $partition;
 	}
 endif;
-
-if ( ! function_exists( 'array_partition' ) ) :
-	/**
-	 * Splits an array into N number of evenly distributed partitions (useful for
-	 * splitting a list into columns).
-	 *
-	 * @since 1.0
-	 * @deprecated 1.1 Use c2c_array_partition() instead
-	 */
-	function array_partition( $array, $number_of_columns ) {
-		_deprecated_function( 'array_partition', '1.1', 'c2c_array_partition' );
-		return c2c_array_partition( $array, $number_of_columns );
-	}
-endif;
