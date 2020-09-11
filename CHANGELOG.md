@@ -9,6 +9,7 @@
     * Change: Move `tests/` to `phpunit/tests/`
     * Change: Rename `phpunit.xml` to `phpunit.xml.dist` per best practices
 * Change: Note compatibility through WP 5.5+
+* Change: Use backticks to denote code in old Upgrade Notice entries
 
 ## 1.2.9 _(2020-05-04)_
 * Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests

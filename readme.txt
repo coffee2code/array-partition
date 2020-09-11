@@ -217,10 +217,10 @@ Trivial update: noted compatibility through WP 3.3+ and minor documentation form
 Trivial update: noted compatibility through WP 3.2+ and minor code formatting changes (spacing)
 
 = 1.1 =
-Minor update: deprecated 'array_partition()' in favor of 'c2c_array_partition()'; added link to plugin homepage in readme.txt
+Minor update: deprecated `array_partition()` in favor of `c2c_array_partition()`; added link to plugin homepage in readme.txt
 
 = 1.0.3 =
 Trivial update: noted compatibility through WP 3.1+ and updated copyright date
 
 = 1.0.2 =
-Minor update. Highlights: added if(function_exists()) check around array_partition(); minor text reorganization; added verified WP 3.0 compatibility.
+Minor update. Highlights: added `if(function_exists())` check around `array_partition()`; minor text reorganization; added verified WP 3.0 compatibility.
