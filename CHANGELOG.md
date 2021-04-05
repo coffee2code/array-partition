@@ -3,6 +3,7 @@
 ## _(in-progress)_
 * Change: Note compatibility through WP 5.7+
 * Change: Update copyright date (2021)
+* Fix: Add missing word in an installation instruction
 
 ## 1.3 _(2020-09-10)_
 * Delete: Remove long-deprecated `array_partition()`

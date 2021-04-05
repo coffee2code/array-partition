@@ -9,7 +9,7 @@ This plugin is available in the WordPress Plugin Directory: https://wordpress.or
 
 Use as a general PHP helper:
 
-1. Include the `array_partition.php` in your code.
+1. Include the `array_partition.php` file in your code.
 2. Use the `c2c_array_partition()` function provided by this script in your own code.
 
 Use as a WordPress plugin:
