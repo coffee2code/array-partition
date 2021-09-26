@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 5.8
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -152,6 +152,16 @@ Yes.
 
 == Changelog ==
 
+= 1.3.2 (2021-09-25) =
+* Change: Note compatibility through WP 5.8+
+* Unit tests:
+    * Change: Restructure unit test directories
+        * Change: Move `phpunit/` into `tests/phpunit/`
+        * Change: Move `phpunit/bin/` into `tests/`
+    * Change: Remove 'test-' prefix from unit test file
+    * Change: In bootstrap, store path to plugin file constant
+    * Change: In bootstrap, add backcompat for PHPUnit pre-v6.0
+
 = 1.3.1 (2021-04-05) =
 * Change: Note compatibility through WP 5.7+
 * Change: Update copyright date (2021)
@@ -168,16 +178,13 @@ Yes.
 * Change: Note compatibility through WP 5.5+
 * Change: Use backticks to denote code in old Upgrade Notice entries
 
-= 1.2.9 (2020-05-04) =
-* Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests
-* Change: Note compatibility through WP 5.4+
-* Change: Tweak FAQ answer to better clarify difference from `array_chunk()`
-* Change: Update links to coffee2code.com to be HTTPS
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/array-partition/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.3.2 =
+Trivial update: noted compatibility through WP 5.8+ and minor reorganization and tweaks to unit tests
 
 = 1.3.1 =
 Trivial update: noted compatibility through WP 5.7+ and updated copyright date (2021)
