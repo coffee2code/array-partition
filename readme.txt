@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 6.3
-Stable tag: 1.3.2
+Stable tag: 1.3.3
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -152,6 +152,10 @@ Yes.
 
 == Changelog ==
 
+= 1.3.3 (2023-05-21) =
+* Change: Note compatibility through WP 6.3+
+* Change: Update copyright date (2023)
+
 = 1.3.2 (2021-09-25) =
 * Change: Note compatibility through WP 5.8+
 * Unit tests:
@@ -167,21 +171,13 @@ Yes.
 * Change: Update copyright date (2021)
 * Fix: Add missing word in an installation instruction
 
-= 1.3 (2020-09-10) =
-* Delete: Remove long-deprecated `array_partition()`
-* Change: Restructure unit test file structure
-    * New: Create new subdirectory `phpunit/` to house all files related to unit testing
-    * Change: Move `bin/` to `phpunit/bin/`
-    * Change: Move `tests/bootstrap.php` to `phpunit/`
-    * Change: Move `tests/` to `phpunit/tests/`
-    * Change: Rename `phpunit.xml` to `phpunit.xml.dist` per best practices
-* Change: Note compatibility through WP 5.5+
-* Change: Use backticks to denote code in old Upgrade Notice entries
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/array-partition/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.3.3 =
+Trivial update: noted compatibility through WP 6.3+ and updated copyright date (2023)
 
 = 1.3.2 =
 Trivial update: noted compatibility through WP 5.8+ and minor reorganization and tweaks to unit tests
