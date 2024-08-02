@@ -5,7 +5,8 @@
  * @package array_partition
  */
 
-define( 'ARRAY_PARTITION_PLUGIN_FILE', dirname( __FILE__, 3 ) . '/array_partition.php' );
+define( 'ARRAY_PARTITION_PLUGIN_DIR',  dirname( __FILE__, 3 ) );
+define( 'ARRAY_PARTITION_PLUGIN_FILE', ARRAY_PARTITION_PLUGIN_DIR . '/array_partition.php' );
 
 ini_set( 'display_errors', 'on' );
 error_reporting( E_ALL );
