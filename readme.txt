@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 6.6
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -152,6 +152,18 @@ Yes. The tests are not packaged in the release .zip file or included in plugins.
 
 == Changelog ==
 
+= 1.3.4 (2024-08-02) =
+* Change: Note compatibility through WP 6.6+
+* Change: Update copyright date (2024)
+* New: Add `.gitignore` file
+* Change: Reduce number of 'Tags' from `readme.txt`
+* Change: Remove development and testing-related files from release packaging
+* Unit tests:
+    * Hardening: Prevent direct web access to `bootstrap.php`
+    * Allow tests to run against current versions of WordPress
+    * New: Add `composer.json` for PHPUnit Polyfill dependency
+    * Change: In bootstrap, store path to plugin directory in a constant
+
 = 1.3.3 (2023-05-21) =
 * Change: Note compatibility through WP 6.3+
 * Change: Update copyright date (2023)
@@ -166,15 +178,13 @@ Yes. The tests are not packaged in the release .zip file or included in plugins.
     * Change: In bootstrap, store path to plugin file constant
     * Change: In bootstrap, add backcompat for PHPUnit pre-v6.0
 
-= 1.3.1 (2021-04-05) =
-* Change: Note compatibility through WP 5.7+
-* Change: Update copyright date (2021)
-* Fix: Add missing word in an installation instruction
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/array-partition/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.3.4 =
+Trivial update: noted compatibility through WP 6.6+, removed unit tests from release packaging, and updated copyright date (2024)
 
 = 1.3.3 =
 Trivial update: noted compatibility through WP 6.3+ and updated copyright date (2023)
