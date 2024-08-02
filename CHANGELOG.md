@@ -1,5 +1,8 @@
 # Changelog
 
+## _(in-progress)_
+* Change: Update copyright date (2024)
+
 ## 1.3.3 _(2023-05-21)_
 * Change: Note compatibility through WP 6.3+
 * Change: Update copyright date (2023)
