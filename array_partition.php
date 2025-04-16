@@ -10,7 +10,7 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Description: Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
  *
- * Compatible with all versions of WordPress.
+ * Compatible with all versions of WordPress, and PHP through at least 8.3+.
  *
  * =>> Read the accompanying readme.txt file for instructions and documentation.
  * =>> Also, visit the plugin's homepage for additional information and updates.
