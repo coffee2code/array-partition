@@ -5,7 +5,7 @@
  * Plugin URI:  https://coffee2code.com/wp-plugins/array-partition/
  * Author:      Scott Reilly
  * Author URI:  https://coffee2code.com/
- * Text Domain: array-partition
+ * Text Domain: array_partition
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Description: Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)

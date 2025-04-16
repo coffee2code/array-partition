@@ -1,6 +1,7 @@
 # Changelog
 
 ## _(in-progress)_
+* Change: Use correct value for 'Text Domain' in plugin header
 * Change: Note compatibility through WP 6.8+
 * Change: Update copyright date (2025)
 
