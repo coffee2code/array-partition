@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.2
 Tested up to: 6.8
-Stable tag: 1.3.4
+Stable tag: 1.3.5
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -145,12 +145,18 @@ For an array with 12 elements, if you requested a chunk size of 2, you would get
 
 Phrased another way, with `array_chunk()` you tell it how many elements max should be in a partition and it gives you as many partitions as necessary. With `c2c_array_partition()`, you tell it how many partitions you want, and it'll evenly split the elements into those partitions as evenly as possible.
 
-= Does this plugin include unit tests? =
+= Does this plugin have unit tests? =
 
 Yes. The tests are not packaged in the release .zip file or included in plugins.svn.wordpress.org, but can be found in the [plugin's GitHub repository](https://github.com/coffee2code/array-partition/).
 
 
 == Changelog ==
+
+= 1.3.5 (2025-04-16) =
+* Change: Use correct value for 'Text Domain' in plugin header
+* Change: Note compatibility through WP 6.8+
+* Change: Note compatibility through PHP 8.3+
+* Change: Update copyright date (2025)
 
 = 1.3.4 (2024-08-02) =
 * Change: Note compatibility through WP 6.6+
@@ -168,20 +174,13 @@ Yes. The tests are not packaged in the release .zip file or included in plugins.
 * Change: Note compatibility through WP 6.3+
 * Change: Update copyright date (2023)
 
-= 1.3.2 (2021-09-25) =
-* Change: Note compatibility through WP 5.8+
-* Unit tests:
-    * Change: Restructure unit test directories
-        * Change: Move `phpunit/` into `tests/phpunit/`
-        * Change: Move `phpunit/bin/` into `tests/`
-    * Change: Remove 'test-' prefix from unit test file
-    * Change: In bootstrap, store path to plugin file constant
-    * Change: In bootstrap, add backcompat for PHPUnit pre-v6.0
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/array-partition/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.3.5 =
+Trivial update: fixed value of 'Text Domain' plugin header, noted compatibility through WP 6.8+ and PHP 8.3+, and updated copyright date (2025)
 
 = 1.3.4 =
 Trivial update: noted compatibility through WP 6.6+, removed unit tests from release packaging, and updated copyright date (2024)

@@ -1,6 +1,6 @@
 # Changelog
 
-## _(in-progress)_
+## 1.3.5 _(2025-04-16)_
 * Change: Use correct value for 'Text Domain' in plugin header
 * Change: Note compatibility through WP 6.8+
 * Change: Note compatibility through PHP 8.3+
