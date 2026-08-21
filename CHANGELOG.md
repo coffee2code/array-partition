@@ -1,7 +1,7 @@
 # Changelog
 
 ## _(in-progress)_
-* Change: Use `exit` instead of `die()` when bailing on direct file invocation
+* Change: Remove the direct access check so file can once again be used as a general PHP include
 * Change: Note compatibility through WP 7.1+
 * Change: Note minimum required version of WP as 2.5
 * Change: Note compatibility through PHP 8.5+

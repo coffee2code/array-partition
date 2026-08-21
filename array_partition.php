@@ -42,8 +42,6 @@
 	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-defined( 'ABSPATH' ) || exit;
-
 if ( ! function_exists( 'c2c_array_partition' ) ) :
 	/**
 	 * Splits an array into N number of evenly distributed partitions (useful for
