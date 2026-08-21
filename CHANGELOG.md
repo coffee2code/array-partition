@@ -16,6 +16,7 @@
 * Unit tests:
     * Change: Enable stricter output testing and fail on risky tests
     * Change: Remove backward compatibility for PHPUnit < 6
+    * Change: Add `composer test` script and explicit PHPUnit dev dependency
     * Change: Improve portability of test installation script
 
 ## 1.3.5 _(2025-04-16)_
