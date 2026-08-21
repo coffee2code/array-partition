@@ -132,7 +132,7 @@ Links: [Plugin Homepage](https://coffee2code.com/wp-plugins/array-partition/) | 
         )
 )`
 
-Also see Description section for another example. Definitely check out the packaged unit test file as it contains various examples.
+Also see Description section for another example. Definitely check out the unit test file in the GitHub repository as it contains various examples (see FAQ).
 
 
 == Frequently Asked Questions ==
