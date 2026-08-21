@@ -68,7 +68,7 @@ if ( ! function_exists( 'c2c_array_partition' ) ) :
 		}
 
 		$arraylen = count( $array );
-		$partlen = floor( $arraylen / $number_of_columns );
+		$partlen = intdiv( $arraylen, $number_of_columns );
 		$partrem = $arraylen % $number_of_columns;
 		$partition = [];
 		$mark = 0;

@@ -6,6 +6,7 @@
 * Change: Remove the direct access check so file can once again be used as a general PHP include
 * Change: Only accept positive integer values for number of columns
 * Change: Switch to using short array syntax
+* Change: Use `intdiv()` instead of `floor()` for partition size calculation
 * Change: Note compatibility through WP 7.1+
 * Change: Drop compatibility with versions of WP older than 5.0
 * Change: Note compatibility through PHP 8.5+
