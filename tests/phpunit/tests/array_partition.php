@@ -72,7 +72,7 @@ class array_partition_Test extends WP_UnitTestCase {
 	}
 
 	public function test_if_negative_number_of_columns_requested() {
-		$this->assertEquals( $this->get_test_array_partitioned_into_3(), c2c_array_partition( $this->get_test_array(), -3 ) );
+		$this->assertEmpty( c2c_array_partition( $this->get_test_array(), -3 ) );
 	}
 
 	public function test_if_string_numerical_number_of_columns_requested() {
