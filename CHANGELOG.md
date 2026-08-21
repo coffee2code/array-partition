@@ -6,6 +6,7 @@
 * Change: Note minimum required version of WP as 2.5
 * Change: Note compatibility through PHP 8.5+
 * Change: Update copyright date (2026)
+* Fix: Specify appropriate text domain in plugin header
 * New: Add `.gitattributes` file to exclude files from Github packaging
 * Unit tests:
     * Change: Enable stricter output testing and fail on risky tests
