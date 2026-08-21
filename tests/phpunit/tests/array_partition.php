@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-class array_partition_Test extends WP_UnitTestCase {
+class Array_Partition_Test extends WP_UnitTestCase {
 
 	//
 	//
@@ -43,7 +43,7 @@ class array_partition_Test extends WP_UnitTestCase {
 		$expected = array(
 			array( 'aardvark', 'bear', 'cat' ),
 			array( 'dog', 'emu', 'fox' ),
-			array(  'gnu', 'hippo' ),
+			array( 'gnu', 'hippo' ),
 			array( 'ibis', 'jackal' ),
 			array( 'kangaroo', 'lemur' ),
 		);
@@ -55,11 +55,11 @@ class array_partition_Test extends WP_UnitTestCase {
 		$this->assertEquals( array( $this->get_test_array() ), c2c_array_partition( $this->get_test_array(), 1 ) );
 	}
 
-	public function test_more_partition_than_items() {
+	public function test_more_partitions_than_items() {
 		$expected = array_map( array( $this, 'cast_to_array' ), $this->get_test_array() );
 		$number_of_columns = 17;
 		$extra_columns = $number_of_columns - count( $expected );
-		// Each partition beyond the data array size becomes a blank array
+		// Each partition beyond the data array size becomes a blank array.
 		for ( $i = 0; $i < $extra_columns; $i++ ) {
 			$expected[] = array();
 		}
