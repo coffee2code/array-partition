@@ -64,13 +64,13 @@ if ( ! function_exists( 'c2c_array_partition' ) ) :
 	 */
 	function c2c_array_partition( array $array, int $number_of_columns ) : array {
 		if ( $number_of_columns < 1 ) {
-			return array();
+			return [];
 		}
 
 		$arraylen = count( $array );
 		$partlen = floor( $arraylen / $number_of_columns );
 		$partrem = $arraylen % $number_of_columns;
-		$partition = array();
+		$partition = [];
 		$mark = 0;
 		for ( $px = 0; $px < $number_of_columns; $px++ ) {
 			$incr = ( $px < $partrem ) ? $partlen + 1 : $partlen;
