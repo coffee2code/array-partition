@@ -3,6 +3,7 @@
 ## _(in-progress)_
 * Change: Use `exit` instead of `die()` when bailing on direct file invocation
 * Change: Note compatibility through WP 7.1+
+* Change: Note minimum required version of WP as 2.5
 * Change: Note compatibility through PHP 8.5+
 * Change: Update copyright date (2026)
 * New: Add `.gitattributes` file to exclude files from Github packaging
