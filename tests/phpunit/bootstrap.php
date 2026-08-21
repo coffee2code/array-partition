@@ -6,7 +6,7 @@
  */
 
 // Prevent web access.
-( php_sapi_name() !== 'cli' ) && die();
+( php_sapi_name() !== 'cli' ) && exit;
 
 define( 'ARRAY_PARTITION_PLUGIN_DIR',  dirname( __FILE__, 3 ) );
 define( 'ARRAY_PARTITION_PLUGIN_FILE', ARRAY_PARTITION_PLUGIN_DIR . '/array_partition.php' );

@@ -1,6 +1,6 @@
 <?php
 
-defined( 'ABSPATH' ) or die();
+defined( 'ABSPATH' ) || exit;
 
 class array_partition_Test extends WP_UnitTestCase {
 
