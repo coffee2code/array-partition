@@ -3,6 +3,7 @@
 ## _(in-progress)_
 * New: Add type hints to function signature
 * Change: Remove the direct access check so file can once again be used as a general PHP include
+* Change: Only accept positive integer values for number of columns
 * Change: Note compatibility through WP 7.1+
 * Change: Note minimum required version of WP as 2.5
 * Change: Note compatibility through PHP 8.5+

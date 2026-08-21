@@ -63,9 +63,7 @@ if ( ! function_exists( 'c2c_array_partition' ) ) :
 	 *                                  containing the distributed items from $array.
 	 */
 	function c2c_array_partition( array $array, int $number_of_columns ) : array {
-		$number_of_columns = absint( $number_of_columns );
-
-		if ( 0 === $number_of_columns ) {
+		if ( $number_of_columns < 1 ) {
 			return array();
 		}
 
