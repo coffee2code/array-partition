@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ $# -lt 3 ]; then
+if [ $# -lt 5 ]; then
 	echo "usage: $0 <db-name> <db-user> <db-pass> <wp-version> <db-host>"
 	exit 1
 fi
