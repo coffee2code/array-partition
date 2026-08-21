@@ -7,6 +7,7 @@
  * Author URI:  https://coffee2code.com/
  * Text Domain: array-partition
  * Requires at least: 2.5
+ * Requires PHP:      7.0
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Description: Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)

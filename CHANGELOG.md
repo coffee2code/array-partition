@@ -5,6 +5,7 @@
 * Change: Note compatibility through WP 7.1+
 * Change: Note minimum required version of WP as 2.5
 * Change: Note compatibility through PHP 8.5+
+* Change: Drop compatibility with versions of PHP older than 7.0
 * Change: Update copyright date (2026)
 * Fix: Specify appropriate text domain in plugin header
 * Fix: Minor documentation fixes
