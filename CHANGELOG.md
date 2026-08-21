@@ -6,7 +6,7 @@
 * Change: Only accept positive integer values for number of columns
 * Change: Switch to using short array syntax
 * Change: Note compatibility through WP 7.1+
-* Change: Note minimum required version of WP as 2.5
+* Change: Drop compatibility with versions of WP older than 5.0
 * Change: Note compatibility through PHP 8.5+
 * Change: Drop compatibility with versions of PHP older than 7.0
 * Change: Update copyright date (2026)

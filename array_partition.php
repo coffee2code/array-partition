@@ -6,13 +6,13 @@
  * Author:      Scott Reilly
  * Author URI:  https://coffee2code.com/
  * Text Domain: array-partition
- * Requires at least: 2.5
+ * Requires at least: 5.0
  * Requires PHP:      7.0
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Description: Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
  *
- * Compatible with all versions of WordPress, and PHP through at least 8.5+.
+ * Compatible with WordPress 5.0+ through 7.1+, and PHP 7.0 through at least 8.5+.
  *
  * =>> Read the accompanying readme.txt file for instructions and documentation.
  * =>> Also, visit the plugin's homepage for additional information and updates.
