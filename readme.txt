@@ -17,7 +17,7 @@ This plugin provides the PHP function `c2c_array_partition()` to split an array 
 
 For example:
 
-`$topics = array( "aardvark", "bear", "cat", "dog", "emu", "fox", "gnu", "hippo", "ibis", "jackal" );`
+`$topics = array( "ant", "bear", "cat", "dog", "emu", "fox", "gnu", "hog", "ibis", "jackal" );`
 `print_r( c2c_array_partition( $topics, 4 ) );`
 
 Yields:
@@ -41,7 +41,7 @@ Yields:
     [2] => Array
         (
             [0] => gnu
-            [1] => hippo
+            [1] => hog
         )
 
     [3] => Array
