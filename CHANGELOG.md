@@ -1,6 +1,7 @@
 # Changelog
 
 ## _(in-progress)_
+* New: Add type hints to function signature
 * Change: Remove the direct access check so file can once again be used as a general PHP include
 * Change: Note compatibility through WP 7.1+
 * Change: Note minimum required version of WP as 2.5
