@@ -5,6 +5,7 @@
 * Change: Note compatibility through WP 7.1+
 * Change: Note compatibility through PHP 8.5+
 * Change: Update copyright date (2026)
+* New: Add `.gitattributes` file to exclude files from Github packaging
 
 ## 1.3.5 _(2025-04-16)_
 * Change: Use correct value for 'Text Domain' in plugin header
