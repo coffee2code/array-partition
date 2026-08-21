@@ -18,7 +18,7 @@
  * =>> Also, visit the plugin's homepage for additional information and updates.
  * =>> Or visit: https://wordpress.org/plugins/array-partition/
  *
- * Credit: https://secure.php.net/manual/en/function.array-chunk.php#75022
+ * Credit: https://www.php.net/manual/en/function.array-chunk.php#75022
  *
  * @package array_partition
  * @author  Scott Reilly
