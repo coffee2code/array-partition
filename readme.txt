@@ -1,4 +1,4 @@
-=== array_partition ===
+=== Array Partition ===
 Contributors: coffee2code
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6ARCFJ9TX3522
 Tags: columns, array, partition, chunk, coffee2code

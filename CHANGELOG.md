@@ -2,6 +2,7 @@
 
 ## _(in-progress)_
 * New: Add type hints to function signature
+* Change: Rename to "Array Partition"
 * Change: Remove the direct access check so file can once again be used as a general PHP include
 * Change: Only accept positive integer values for number of columns
 * Change: Switch to using short array syntax

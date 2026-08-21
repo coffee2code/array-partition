@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: array_partition
+ * Plugin Name: Array Partition
  * Version:     1.3.5
  * Plugin URI:  https://coffee2code.com/wp-plugins/array-partition/
  * Author:      Scott Reilly
@@ -20,7 +20,7 @@
  *
  * Credit: https://www.php.net/manual/en/function.array-chunk.php#75022
  *
- * @package array_partition
+ * @package Array_Partition
  * @author  Scott Reilly
  * @version 1.3.5
 */
