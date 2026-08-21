@@ -14,6 +14,7 @@
 * Fix: Minor documentation fixes
 * New: Add `.gitattributes` file to exclude files from Github packaging
 * Unit tests:
+    * Change: Update dev dependencies
     * Change: Enable stricter output testing and fail on risky tests
     * Change: Remove backward compatibility for PHPUnit < 6
     * Change: Add `composer test` script and explicit PHPUnit dev dependency
