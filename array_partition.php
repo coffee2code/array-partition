@@ -5,7 +5,6 @@
  * Plugin URI:  https://coffee2code.com/wp-plugins/array-partition/
  * Author:      Scott Reilly
  * Author URI:  https://coffee2code.com/
- * Text Domain: array-partition
  * Requires at least: 5.0
  * Requires PHP:      7.0
  * License:     GPLv2 or later

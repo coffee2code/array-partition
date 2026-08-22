@@ -12,7 +12,7 @@
 * Change: Note compatibility through PHP 8.5+
 * Change: Drop compatibility with versions of PHP older than 7.0
 * Change: Update copyright date (2026)
-* Fix: Specify appropriate text domain in plugin header
+* Change: Remove the 'Text Domain' plugin header
 * Fix: Minor documentation fixes
 * New: Add `.gitattributes` file to exclude files from Github packaging
 * Unit tests:
