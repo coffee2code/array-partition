@@ -2,14 +2,14 @@
 /**
  * PHPUnit bootstrap file
  *
- * @package array_partition
+ * @package Array_Partition
  */
 
 // Prevent web access.
 ( php_sapi_name() !== 'cli' ) && exit;
 
 define( 'ARRAY_PARTITION_PLUGIN_DIR',  dirname( __FILE__, 3 ) );
-define( 'ARRAY_PARTITION_PLUGIN_FILE', ARRAY_PARTITION_PLUGIN_DIR . '/array_partition.php' );
+define( 'ARRAY_PARTITION_PLUGIN_FILE', ARRAY_PARTITION_PLUGIN_DIR . '/array-partition.php' );
 
 $polyfill_path = ARRAY_PARTITION_PLUGIN_DIR . '/vendor/yoast/phpunit-polyfills/phpunitpolyfills-autoload.php';
 if ( file_exists( $polyfill_path ) ) {
