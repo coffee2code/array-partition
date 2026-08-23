@@ -17,7 +17,7 @@ if ( file_exists( $polyfill_path ) ) {
 } else {
 	echo "Error: PHPUnit Polyfills dependency not found.\n";
 	echo "Run: composer require --dev yoast/phpunit-polyfills:\"^2.0\"\n";
-	exit;
+	exit( 1 );
 }
 
 ! defined( 'WP_RUN_CORE_TESTS' ) && define( 'WP_RUN_CORE_TESTS', false );
@@ -30,8 +30,19 @@ if ( ! $_tests_dir ) {
 	$_tests_dir = '/tmp/wordpress-tests-lib';
 }
 
+// Support both the wordpress-tests-lib layout and a full wordpress-develop checkout.
+$_tests_includes = null;
+if ( file_exists( $_tests_dir . '/includes/functions.php' ) ) {
+	$_tests_includes = $_tests_dir . '/includes';
+} elseif ( file_exists( $_tests_dir . '/tests/phpunit/includes/functions.php' ) ) {
+	$_tests_includes = $_tests_dir . '/tests/phpunit/includes';
+} else {
+	echo "Error: Could not find WordPress test library includes in {$_tests_dir}.\n";
+	exit( 1 );
+}
+
 // Give access to tests_add_filter() function.
-require_once $_tests_dir . '/tests/phpunit/includes/functions.php';
+require_once $_tests_includes . '/functions.php';
 
 require_once dirname( __FILE__ ) . '/trait-array-partition-test-cases.php';
 
@@ -44,4 +55,4 @@ function _manually_load_plugin() {
 tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );
 
 // Start up the WP testing environment.
-require $_tests_dir . '/tests/phpunit/includes/bootstrap.php';
+require $_tests_includes . '/bootstrap.php';

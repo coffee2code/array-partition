@@ -22,6 +22,7 @@
     * Change: Remove backward compatibility for PHPUnit < 6
     * Change: Add `composer test` script and explicit PHPUnit dev dependency
     * Change: Improve portability of test installation script
+    * Change: Support both wordpress-tests-lib and wordpress-develop test layouts in bootstrap
     * New: Add more test coverage
     * New: Add library-specific PHPUnit tests that run without WordPress
 
