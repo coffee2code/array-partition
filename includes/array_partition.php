@@ -17,7 +17,7 @@
 	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-if ( ! function_exists( 'c2c_array_partition' ) ) :
+final class c2c_Array_Partition {
 	/**
 	 * Splits an array into N number of evenly distributed partitions (useful for
 	 * splitting a list into columns).
@@ -30,13 +30,14 @@ if ( ! function_exists( 'c2c_array_partition' ) ) :
 	 *
 	 * @since 1.1
 	 * @since 1.4 Added type hints to function signature.
+	 * @since 2.0 Moved to static class method.
 	 *
 	 * @param  array $array             Array of items to be evenly distributed into columns.
 	 * @param  int   $number_of_columns Number of columns to split the items contained in $array into.
 	 * @return array                    An array whose elements are sub-arrays representing columns
 	 *                                  containing the distributed items from $array.
 	 */
-	function c2c_array_partition( array $array, int $number_of_columns ) : array {
+	public static function partition( array $array, int $number_of_columns ) : array {
 		if ( $number_of_columns < 1 ) {
 			return [];
 		}
@@ -53,4 +54,5 @@ if ( ! function_exists( 'c2c_array_partition' ) ) :
 		}
 		return $partition;
 	}
-endif;
+
+}

@@ -2,6 +2,7 @@
 
 ## _(in-progress)_
 * Change: Split code into a plugin loader and library file
+    * New: Library invocation of function is now `c2c_Array_Partition::partition(...)`
 * New: Add type hints to function signature
 * Change: Rename to "Array Partition"
 * Change: Only accept positive integer values for number of columns

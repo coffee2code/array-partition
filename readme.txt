@@ -94,8 +94,9 @@ Links: [Plugin Homepage](https://coffee2code.com/wp-plugins/array-partition/) | 
 == Installation ==
 
 1. Install via the built-in WordPress plugin installer. Or download and unzip `array-partition.zip` inside the plugins directory for your site (typically `wp-content/plugins/`)
-1. Activate the plugin through the 'Plugins' admin menu in WordPress
-1. Use the `c2c_array_partition()` function in your template(s) or code as desired.
+2. Activate the plugin through the 'Plugins' admin menu in WordPress
+3. Use the `c2c_array_partition()` function in your WordPress template(s) or code as desired.
+4. Optional. For general PHP usage (outside of WordPress), include the `includes/array_partition.php` file and call `c2c_Array_Partition::partition()` instead of `c2c_array_partition()`. See FAQ for example.
 
 
 == Examples ==
@@ -145,6 +146,16 @@ Also see Description section for another example. Definitely check out the unit 
 For an array with 12 elements, if you requested a chunk size of 2, you would get back an array of 6 sub-arrays (the original elements grouped into arrays of 2 elements). With `array_partition()`, if you requested 2 partitions, you would get back an array of 2 sub-arrays (the original elements grouped into 2 arrays).
 
 Phrased another way, with `array_chunk()` you tell it how many elements max should be in a partition and it gives you as many partitions as necessary. With `c2c_array_partition()`, you tell it how many partitions you want, and it'll evenly split the elements into those partitions as evenly as possible.
+
+= Can I use this function in PHP in a context outside of WordPress? =
+
+Yes. You just need to include a file from this plugin within your code, and use `c2c_Array_Partition::partition()` instead of `c2c_array_partition()`.
+
+`
+require_once 'vendor/array-partition/includes/array_partition.php';
+$items = []; // Create an array of items to partition.
+$partitioned = c2c_Array_Partition::partition( $items, 4 );
+`
 
 = Does this plugin have unit tests? =
 

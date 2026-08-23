@@ -45,3 +45,20 @@
 defined( 'ABSPATH' ) || exit;
 
 require_once __DIR__ . '/includes/array_partition.php';
+
+if ( ! function_exists( 'c2c_array_partition' ) ) :
+	/**
+	 * Alias for `c2c_Array_Partition::partition()`.
+	 *
+	 * @since 1.1
+	 * @since 2.0 Moved to plugin loader; now delegates to `c2c_Array_Partition::partition()`.
+	 *
+	 * @param array $array             Array of items to be evenly distributed into columns.
+	 * @param int   $number_of_columns Number of columns to split the items contained in $array into.
+	 * @return array                   An array whose elements are sub-arrays representing columns
+	 *                                 containing the distributed items from $array.
+	 */
+	function c2c_array_partition( array $array, int $number_of_columns ) : array {
+		return c2c_Array_Partition::partition( $array, $number_of_columns );
+	}
+endif;
