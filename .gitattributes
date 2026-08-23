@@ -4,5 +4,6 @@
 composer.json export-ignore
 composer.lock export-ignore
 phpunit.xml.dist export-ignore
+phpunit-library.xml.dist export-ignore
 tests/ export-ignore
 TODO.md export-ignore
