@@ -1,4 +1,21 @@
 {
+    "name": "coffee2code/array-partition",
+    "description": "Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns).",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Scott Reilly",
+            "homepage": "https://coffee2code.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/coffee2code/array-partition/issues",
+        "source": "https://github.com/coffee2code/array-partition"
+    },
+    "require": {
+        "php": ">=7.0"
+    },
     "require-dev": {
         "phpunit/phpunit": "^9.6",
         "yoast/phpunit-polyfills": "^2.0"

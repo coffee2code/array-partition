@@ -25,6 +25,7 @@
     * Change: Support both wordpress-tests-lib and wordpress-develop test layouts in bootstrap
     * New: Add more test coverage
     * New: Add library-specific PHPUnit tests that run without WordPress
+* New: Expand `composer.json` with package metadata and a PHP requirement
 
 ## 1.3.5 _(2025-04-16)_
 * Change: Use correct value for 'Text Domain' in plugin header
