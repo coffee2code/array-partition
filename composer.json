@@ -4,6 +4,9 @@
         "yoast/phpunit-polyfills": "^2.0"
     },
     "scripts": {
-        "test": "phpunit"
+        "test": [
+            "phpunit -c phpunit-library.xml.dist",
+            "phpunit"
+        ]
     }
 }

@@ -23,6 +23,7 @@
     * Change: Add `composer test` script and explicit PHPUnit dev dependency
     * Change: Improve portability of test installation script
     * New: Add more test coverage
+    * New: Add library-specific PHPUnit tests that run without WordPress
 
 ## 1.3.5 _(2025-04-16)_
 * Change: Use correct value for 'Text Domain' in plugin header

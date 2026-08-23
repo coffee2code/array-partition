@@ -33,6 +33,8 @@ if ( ! $_tests_dir ) {
 // Give access to tests_add_filter() function.
 require_once $_tests_dir . '/tests/phpunit/includes/functions.php';
 
+require_once dirname( __FILE__ ) . '/trait-array-partition-test-cases.php';
+
 /**
  * Manually load the plugin being tested.
  */

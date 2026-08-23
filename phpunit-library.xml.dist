@@ -1,0 +1,16 @@
+<phpunit
+	bootstrap="tests/phpunit/library/bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	beStrictAboutOutputDuringTests="true"
+	failOnRisky="true"
+	>
+	<testsuites>
+		<testsuite name="array-partition-library">
+			<directory suffix=".php">./tests/phpunit/library/</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>
