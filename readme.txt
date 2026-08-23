@@ -7,7 +7,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 5.0
 Requires PHP: 7.0
 Tested up to: 7.1
-Stable tag: 1.3.5
+Stable tag: 2.0
 
 Provides a helper function to split an array into N number of evenly distributed partitions (i.e. split a list into N columns)
 
@@ -164,6 +164,28 @@ Yes. The tests are not packaged in the release .zip file or included in plugins.
 
 == Changelog ==
 
+= 2.0 (2026-08-22) =
+Highlights:
+
+This release is largely a housekeeping release that updates the plugin's name, splits the code into a plugin loader and library file (making non-WP PHP usage more straightfoward), limits support to WP 5.0-7.1+ and PHP 7.0-8.5+, fixes some documentation, updates and expands unit testing, and updates the copyright date (2026).
+
+Details:
+
+* Change: Split code into a plugin loader and library file
+    * New: Library invocation of function is now `c2c_Array_Partition::partition(...)`
+* New: Add type hints to function signature
+* Change: Rename to "Array Partition"
+* Change: Only accept positive integer values for number of columns
+* Change: Switch to using short array syntax
+* Change: Use `intdiv()` instead of `floor()` for partition size calculation
+* Change: Note compatibility through WP 7.1+
+* Change: Drop compatibility with versions of WP older than 5.0
+* Change: Note compatibility through PHP 8.5+
+* Change: Drop compatibility with versions of PHP older than 7.0
+* Change: Update copyright date (2026)
+* Change: Remove the 'Text Domain' plugin header
+* Fix: Minor documentation fixes
+
 = 1.3.5 (2025-04-16) =
 * Change: Use correct value for 'Text Domain' in plugin header
 * Change: Note compatibility through WP 6.8+
@@ -182,14 +204,13 @@ Yes. The tests are not packaged in the release .zip file or included in plugins.
     * New: Add `composer.json` for PHPUnit Polyfill dependency
     * Change: In bootstrap, store path to plugin directory in a constant
 
-= 1.3.3 (2023-05-21) =
-* Change: Note compatibility through WP 6.3+
-* Change: Update copyright date (2023)
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/array-partition/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 2.0 =
+Housekeeping update: updated plugin's name, split code into plugin loader and library file, limited support to WP 5.0-7.1+ and PHP 7.0-8.5+, fixed some documentation, and updated the copyright date (2026).
 
 = 1.3.5 =
 Trivial update: fixed value of 'Text Domain' plugin header, noted compatibility through WP 6.8+ and PHP 8.3+, and updated copyright date (2025)

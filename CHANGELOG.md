@@ -1,6 +1,13 @@
 # Changelog
 
-## _(in-progress)_
+## 2.0 _(2026-08-22)_
+
+### Highlights:
+
+This release is largely a housekeeping release that updates the plugin's name, splits the code into a plugin loader and library file (making non-WP PHP usage more straightfoward), limits support to WP 5.0-7.1+ and PHP 7.0-8.5+, fixes some documentation, updates and expands unit testing, and updates the copyright date (2026).
+
+### Details:
+
 * Change: Split code into a plugin loader and library file
     * New: Library invocation of function is now `c2c_Array_Partition::partition(...)`
 * New: Add type hints to function signature

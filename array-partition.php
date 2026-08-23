@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Array Partition
- * Version:     1.3.5
+ * Version:     2.0
  * Plugin URI:  https://coffee2code.com/wp-plugins/array-partition/
  * Author:      Scott Reilly
  * Author URI:  https://coffee2code.com/
@@ -21,7 +21,7 @@
  *
  * @package Array_Partition
  * @author  Scott Reilly
- * @version 1.3.5
+ * @version 2.0
 */
 
 /*
