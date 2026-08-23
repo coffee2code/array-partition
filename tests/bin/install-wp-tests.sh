@@ -28,4 +28,8 @@ fi
 rm -f wp-tests-config.php.bak
 
 # create database
-mysqladmin create "$DB_NAME" --user="$DB_USER" --password="$DB_PASS" || true
+MYSQLADMIN_ARGS=( create "$DB_NAME" --user="$DB_USER" --password="$DB_PASS" )
+if [ -n "$DB_HOST" ]; then
+	MYSQLADMIN_ARGS+=( --host="$DB_HOST" )
+fi
+mysqladmin "${MYSQLADMIN_ARGS[@]}" || true
