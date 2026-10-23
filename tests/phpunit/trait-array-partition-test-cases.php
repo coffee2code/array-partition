@@ -97,7 +97,7 @@ trait Array_Partition_Test_Cases {
 
 	public function test_if_non_array_requested() {
 		$this->expectException( TypeError::class );
-		$this->expectExceptionMessage( 'must be of type array, string given' );
+		$this->expectExceptionMessage( 'array, string given' );
 
 		$this->partition( 'not an array', 3 );
 	}
